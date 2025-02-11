@@ -17,7 +17,7 @@ spec:
           image: nikitamane/dockerexample:latest  # Ensure this image is pushed to Docker Hub
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8082  # Change to the actual port Spring Boot runs on
+            - containerPort: 808  # Change to the actual port Spring Boot runs on
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:mysql://db-service:3306/my-db"
@@ -35,8 +35,8 @@ spec:
     app: spring-boot-k8s
   ports:
     - protocol: "TCP"
-      port: 8082    # Service port
-      targetPort: 8082  # Must match containerPort
+      port: 808    # Service port
+      targetPort: 808  # Must match containerPort
   type: NodePort
 ---
 apiVersion: apps/v1

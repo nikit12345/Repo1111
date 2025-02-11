@@ -89,6 +89,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>pipeline-project</finalName>
 	</build>
 
 </project>
